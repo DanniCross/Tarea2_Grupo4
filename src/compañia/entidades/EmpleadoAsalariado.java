@@ -13,7 +13,4 @@ public class EmpleadoAsalariado extends Empleado {
 	public double obtenerSalario() {
 		return salarioSemanal;
 	}
-
-	
-	
 }
