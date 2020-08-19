@@ -30,4 +30,8 @@ public abstract class Empleado {
 	 *@return el valor del salario del empleado
 	 */
 	public abstract double obtenerSalario();
+	
+	public String getNombre() {
+		return this.nombre;
+	}
 }

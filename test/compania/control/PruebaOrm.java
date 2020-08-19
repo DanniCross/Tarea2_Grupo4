@@ -24,9 +24,12 @@ public class PruebaOrm {
 		controlCompania.adicionarEmpleado("125", "Chepe", 160000, 0,0, 500000, 'c');
 		gestorBD.persist(controlCompania);
 		gestorBD.getTransaction().commit();
-		ControlCompania buscarEmpleado = gestorBD.find(ControlCompania.class,"123");
-		ControlCompania buscarEmpleado2 = gestorBD.find(ControlCompania.class,"124");
-		ControlCompania buscarEmpleado3 = gestorBD.find(ControlCompania.class,"125");
+		Empleado buscarEmpleado = gestorBD.find(Empleado.class,"123");
+		Empleado buscarEmpleado2 = gestorBD.find(Empleado.class,"124");
+		Empleado buscarEmpleado3 = gestorBD.find(Empleado.class,"125");
+		System.out.println(buscarEmpleado.getNombre());
+		System.out.println(buscarEmpleado2.getNombre());
+		System.out.println(buscarEmpleado3.getNombre());
 		gestorBD.close();
 	}
 	
