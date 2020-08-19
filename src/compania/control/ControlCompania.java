@@ -60,9 +60,14 @@ public class ControlCompania {
 	 * Método que obtiene la nomina semanal a pagar a todos los empleados por la compañia
 	 * @return el valor total de la nomina
 	 */
-	public double calcularNomina() {
+	public double calcularNomina() throws EmpleadoException {
 		List<Empleado> empleados = this.repositorioCompania.consultarEmpleados();
 		double nomina = 0;
+		
+		if(empleados.size() == 0) {
+			throw new EmpleadoException("No hay empleados registrados para calcular la nómina");
+		}
+		
 		for (Empleado empleado: empleados) {
 			nomina += empleado.obtenerSalario();
 		}
