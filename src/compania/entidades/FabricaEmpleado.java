@@ -2,7 +2,9 @@ package compania.entidades;
 
 public class FabricaEmpleado {
 
-	public static Empleado crearEmleado(String identificacion, String nombre, double salarioSemanal,double valorHoras, int horasTrabajadas, double ventasRealizadas, char tipo) {
+	public static Empleado crearEmleado(String identificacion, String nombre, 
+										double salarioSemanal,double valorHoras, int horasTrabajadas, 
+										double ventasRealizadas, char tipo) {
 		Empleado empleado = null;
 		switch(tipo) {
 		case 'A': 
