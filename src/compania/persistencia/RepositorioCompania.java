@@ -30,7 +30,7 @@ public interface RepositorioCompania {
 	 * @param empleado el empleado a eliminar
 	 * @return un booleano indicando si se pudo eliminar o no el empleado
 	 */
-	public abstract boolean eliminarEmpleado(Empleado empleado);
+	/*public abstract boolean eliminarEmpleado(Empleado empleado);*/
 		
 	/**
 	 * Método que obtiene la lista de empleados existentes

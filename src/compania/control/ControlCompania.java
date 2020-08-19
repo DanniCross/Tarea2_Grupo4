@@ -44,7 +44,7 @@ public class ControlCompania {
 			return this.repositorioCompania.adicionarEmpleado(empleadoNuevo);
 		}
 		
-		return true;
+		return false;
 	}
 	
 	/**
@@ -59,12 +59,12 @@ public class ControlCompania {
 	/**
 	 * Método que elimina todos los empleados
 	 */
-	public void eliminarEmpleado() {
+	/*public void eliminarEmpleados() {
 		List<Empleado> empleados = this.repositorioCompania.consultarEmpleados();
 		for (Empleado empleado : empleados) {
 			 this.repositorioCompania.eliminarEmpleado(empleado);	
 		}
-	}
+	}*/
 
 	/**
 	 * Método que obtiene la nomina semanal a pagar a todos los empleados por la compañia

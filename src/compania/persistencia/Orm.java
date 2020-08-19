@@ -38,7 +38,7 @@ public class Orm implements RepositorioCompania {
 		return empleado;
 	}
 	
-	@Override
+	/*@Override
 	public boolean eliminarEmpleado(Empleado empleado) {
 		try	{
 			gestorDB.getTransaction().begin();
@@ -49,7 +49,7 @@ public class Orm implements RepositorioCompania {
 			return false;
 		}
 		return true;
-	}
+	}*/
 	
 	@SuppressWarnings("unchecked")
 	@Override
