@@ -23,6 +23,7 @@ public abstract class Empleado {
 	
 	/*
 	 *Funcion encargada de obtener el salario de los empleados 
+	 *@return el valor del salario del empleado
 	 */
 	public abstract double obtenerSalario();
 }
