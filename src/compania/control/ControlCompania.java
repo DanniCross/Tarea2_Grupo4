@@ -3,11 +3,11 @@ package compania.control;
 import java.awt.List;
 
 
-public class ControlCompañia {
+public class ControlCompania {
 	
 	private List listaEmpleados = new List();
 	
-	public ControlCompañia(List listaEmpleados) {
+	public ControlCompania(List listaEmpleados) {
 		
 		this.listaEmpleados = listaEmpleados;
 	}
