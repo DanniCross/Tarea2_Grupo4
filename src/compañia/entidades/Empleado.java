@@ -1,4 +1,4 @@
-package compañia.entidades;
+package compaÃ±ia.entidades;
 
 public abstract class Empleado {
 

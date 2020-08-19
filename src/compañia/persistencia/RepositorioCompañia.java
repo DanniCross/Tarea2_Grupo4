@@ -1,5 +1,5 @@
-package compañia.persistencia;
+package compaÃ±ia.persistencia;
 
-public interface RepositorioCompañia {
+public interface RepositorioCompaÃ±ia {
 
 }

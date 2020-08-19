@@ -1,4 +1,4 @@
-package compañia.entidades;
+package compaÃ±ia.entidades;
 
 public class EmpleadoAsalariado extends Empleado {
 	

@@ -1,4 +1,4 @@
-package compañia.persistencia;
+package compaÃ±ia.persistencia;
 
 public class Orm {
 
