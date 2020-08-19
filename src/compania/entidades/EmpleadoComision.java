@@ -15,6 +15,10 @@ public class EmpleadoComision extends Empleado{
 	private double salarioSemanal;
 	private double ventasRealizadas;
 
+	public EmpleadoComision() {
+		
+	}
+	
 	public EmpleadoComision(String identificacion, String nombre, double salarioSemanal, double ventasRealizadas) {
 		super(identificacion, nombre);
 		this.salarioSemanal = salarioSemanal;

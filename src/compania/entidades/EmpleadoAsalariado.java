@@ -9,10 +9,13 @@ import javax.persistence.*;
  */
 @Entity
 @DiscriminatorValue("asalariado")
-
 public class EmpleadoAsalariado extends Empleado {
 	
 	private double salarioSemanal; 
+	
+	public EmpleadoAsalariado() {
+		
+	}
 	
 	public EmpleadoAsalariado(String identificacion, String nombre, double salarioSemanal) {
 		super(identificacion, nombre);
