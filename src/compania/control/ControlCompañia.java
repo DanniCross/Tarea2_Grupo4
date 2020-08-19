@@ -1,13 +1,13 @@
-package compaÃ±ia.control;
+package compania.control;
 
 import java.awt.List;
 
 
-public class ControlCompaÃ±ia {
+public class ControlCompañia {
 	
 	private List listaEmpleados = new List();
 	
-	public ControlCompaÃ±ia(List listaEmpleados) {
+	public ControlCompañia(List listaEmpleados) {
 		
 		this.listaEmpleados = listaEmpleados;
 	}

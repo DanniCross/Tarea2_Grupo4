@@ -1,4 +1,4 @@
-package compaÃ±ia.entidades;
+package compañia.entidades;
 
 
 public class FabricaEmpleado {
