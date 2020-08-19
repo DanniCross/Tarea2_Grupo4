@@ -4,15 +4,14 @@ public class EmpleadoAsalariado extends Empleado {
 	
 	private double salarioSemanal; 
 	
-	public EmpleadoAsalariado(String identificacion, String nombre) {
+	public EmpleadoAsalariado(String identificacion, String nombre, double salarioSemanal) {
 		super(identificacion, nombre);
-		// TODO Auto-generated constructor stub
+		this.salarioSemanal = salarioSemanal;
 	}
 
 	@Override
 	public double obtenerSalario() {
-		
-		return 0;
+		return salarioSemanal;
 	}
 
 	
