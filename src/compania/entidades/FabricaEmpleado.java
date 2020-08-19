@@ -2,17 +2,14 @@ package compania.entidades;
 
 
 /**
- * Clase con la logica para crear cualquier objeto de tipo empleado
+ * Clase con la lógica para crear cualquier objeto de tipo empleado
  * @author Marco Contreras
  * @version 1.0.1
-
  */
 public class FabricaEmpleado {
-	
-
 
 	/**
-	 * Metodo para crear cualquier objeto de tipo Empleado según los parametros ingresados
+	 * Método para crear cualquier objeto de tipo Empleado según los parametros ingresados
 	 * @param identificacion es la código que identifica a un empleado
 	 * @param nombre es el nombre completo del empleado a crear
 	 * @param salarioSemanal es el salario semanal que se le paga a un empelado si es asalariado o por comisión

@@ -1,4 +1,5 @@
 package compania.entidades;
+
 import javax.persistence.*;
 
 /**
@@ -6,7 +7,6 @@ import javax.persistence.*;
  * @author Marco Contreras
  * @version 1.0
  */
-
 @Entity
 @DiscriminatorValue("asalariado")
 
