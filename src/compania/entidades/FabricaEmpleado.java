@@ -1,5 +1,8 @@
 package compania.entidades;
+<<<<<<< HEAD
 
+=======
+>>>>>>> e136c932ab95feb31b9968684c94a6ef66685470
 
 public class FabricaEmpleado {
 
