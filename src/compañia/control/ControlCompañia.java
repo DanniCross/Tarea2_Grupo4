@@ -1,5 +1,9 @@
-package compaÃ±ia.control;
+package compañia.control;
 
-public class ControlCompaÃ±ia {
+public class ControlCompañia {
+	
+	public ControlCompañia() {
+		
+	}
 	
 }
