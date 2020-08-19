@@ -6,13 +6,14 @@ import org.junit.jupiter.api.Test;
 class EmpeladoTest {
 
 	/*
-	 * Prueba de obtener la nomina cuando no existen empleados
+	 * 
+	 * Calcular la nomina cuando no hay empleados registrados
 	 */
 	@Test
 	void nominaNoEmpleado() {
 		ControlCompania controlCompania = new ControlCompania();
-		double resultado = controlCompania.calcularNomina();
-		assertEquals(0,resultado);
+		assertThrows(Exception.class,
+				() -> controlCompania.calcularNomina());
 	}
 	
 
