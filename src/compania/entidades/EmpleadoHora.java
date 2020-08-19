@@ -2,13 +2,13 @@ package compania.entidades;
 
 import javax.persistence.*;
 
-@Entity
-@DiscriminatorValue("hora")
-/*
+/**
  * Clase con el funcionamiento de los empleados por horas
  * @author Juan Camilo Gómez
  * @version 1.0
  */
+@Entity
+@DiscriminatorValue("hora")
 public class EmpleadoHora extends Empleado{
 	
 	private double valorHora;

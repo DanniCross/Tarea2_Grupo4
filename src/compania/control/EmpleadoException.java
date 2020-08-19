@@ -1,7 +1,7 @@
 package compania.control;
 
 /**
- * Excepción que controla errores de negocio en cuento a los empleados
+ * Excepción que controla errores de negocio en cuanto a los empleados
  * @author José Cruz
  * @version 1.0
  */

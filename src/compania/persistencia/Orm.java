@@ -8,7 +8,7 @@ import compania.entidades.Empleado;
 /**
  * Clase donde se manejará la conexión y las peticiones a la base de datos
  * @author José Cruz
- * @version 1.0.2
+ * @version 1.0.3
  */
 public class Orm implements RepositorioCompania {
 	
@@ -39,9 +39,7 @@ public class Orm implements RepositorioCompania {
 	}
 	
 	@Override
-	
 	public boolean eliminarEmpleado(Empleado empleado) {
-		
 		try	{
 			gestorDB.getTransaction().begin();
 			gestorDB.remove(empleado);

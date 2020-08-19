@@ -7,7 +7,7 @@ import java.util.*;
 /**
  * Clase con la lógica para el control de los procesos de la compañia
  * @author José Cruz
- * @version 1.0.2
+ * @version 1.0.3
  */
 public class ControlCompania {
 	
@@ -56,7 +56,9 @@ public class ControlCompania {
 		return this.repositorioCompania.buscarEmpleado(identificacion);
 	}
 	
-	
+	/**
+	 * Método que elimina todos los empleados
+	 */
 	public void eliminarEmpleado() {
 		List<Empleado> empleados = this.repositorioCompania.consultarEmpleados();
 		for (Empleado empleado : empleados) {

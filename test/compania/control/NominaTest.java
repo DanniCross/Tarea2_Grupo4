@@ -4,12 +4,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
+/**
+ * Clase de prueba para la nomina cuando existen empleados
+ * @author Marco Contreras
+ * @version 1.0
+ */
 class NominaTest {
-	
-	/*
-	 * @author Marco Contreras
-	 * @Version 1.0
-	 */
 	
 	/*
 	 * Prueba para calcular la nomina con los empleados creados

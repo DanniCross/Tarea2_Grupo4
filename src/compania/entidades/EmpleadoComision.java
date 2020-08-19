@@ -2,13 +2,13 @@ package compania.entidades;
 
 import javax.persistence.*;
 
-@Entity
-@DiscriminatorValue("comision")
-/*
+/**
  * Clase con el funcionamiento de los empleados por comisiones
  * @author Juan Camilo Gómez
  * @version 1.0
  */
+@Entity
+@DiscriminatorValue("comision")
 public class EmpleadoComision extends Empleado{
 	
 	private final double INTERES = 0.05;

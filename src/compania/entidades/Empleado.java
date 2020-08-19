@@ -3,9 +3,9 @@ package compania.entidades;
 import javax.persistence.*;
 
 /**
- * 
+ * Clase con la lógica para manipular objecyos de tipo empleado
  * @author Marco Contreras
- * @version 1.0
+ * @version 1.0.1
  */
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)

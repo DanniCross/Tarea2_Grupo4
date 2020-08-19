@@ -3,7 +3,7 @@ package compania.entidades;
 import javax.persistence.*;
 
 /**
- * 
+ * Clase con la lógica para manipular la infromación de um empleado que es asalariado
  * @author Marco Contreras
  * @version 1.0
  */

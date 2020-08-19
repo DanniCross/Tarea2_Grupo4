@@ -9,9 +9,8 @@ import compania.entidades.*;
 /**
  * Clase donde se prueba el funcionamiento de la persistencia a través de un main
  * @author Marco Contreras
- * @version 1.0
+ * @version 1.0.1
  */
-
 public class PruebaOrm {
 	
 	public static void main(String[] args) {
