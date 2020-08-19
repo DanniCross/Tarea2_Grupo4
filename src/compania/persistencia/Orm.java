@@ -38,6 +38,21 @@ public class Orm implements RepositorioCompania {
 		return empleado;
 	}
 	
+	@Override
+	
+	public boolean eliminarEmpleado(Empleado empleado) {
+		
+		try	{
+			gestorDB.getTransaction().begin();
+			gestorDB.remove(empleado);
+			gestorDB.getTransaction().commit();
+		}
+		catch (Exception errorBorrar)	{
+			return false;
+		}
+		return true;
+	}
+	
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<Empleado> consultarEmpleados() {

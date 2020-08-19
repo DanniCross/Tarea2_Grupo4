@@ -25,6 +25,10 @@ public interface RepositorioCompania {
 	 */
 	public abstract Empleado buscarEmpleado(String identificacion);
 	
+	public abstract boolean eliminarEmpleado(Empleado empleado);
+		
+	
+	
 	/**
 	 * Método que obtiene la lista de empleados existentes
 	 * @return la lista de empleados

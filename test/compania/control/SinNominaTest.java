@@ -1,9 +1,10 @@
 package compania.control;
 
 import static org.junit.jupiter.api.Assertions.*;
+
 import org.junit.jupiter.api.Test;
 
-class EmpleadoTest {
+class SinNominaTest {
 
 	/*
 	 * 
@@ -15,6 +16,5 @@ class EmpleadoTest {
 		assertThrows(Exception.class,
 				() -> controlCompania.calcularNomina());
 	}
-	
 
 }

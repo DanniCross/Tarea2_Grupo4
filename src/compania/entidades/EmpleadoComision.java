@@ -11,7 +11,7 @@ import javax.persistence.*;
  */
 public class EmpleadoComision extends Empleado{
 	
-	private final double INTERES = 0.5;
+	private final double INTERES = 0.05;
 	private double salarioSemanal;
 	private double ventasRealizadas;
 

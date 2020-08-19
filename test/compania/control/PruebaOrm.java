@@ -11,9 +11,11 @@ import compania.entidades.*;
  * @author Marco Contreras
  * @version 1.0
  */
+
 public class PruebaOrm {
 	
 	public static void main(String[] args) {
+		
 		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("Compania");
 		EntityManager gestorBD = fabrica.createEntityManager();
 		EntityManager gestorBD2 = fabrica.createEntityManager();
@@ -43,6 +45,11 @@ public class PruebaOrm {
 		System.out.println(buscarEmpleado.getNombre());
 		System.out.println(buscarEmpleado2.getNombre());
 		System.out.println(buscarEmpleado3.getNombre());
+		
+		/*
+		ControlCompania control = new ControlCompania();
+		control.eliminarEmpleado();*/
+		
 	}
 	
 	

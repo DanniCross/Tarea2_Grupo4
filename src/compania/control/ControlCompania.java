@@ -56,6 +56,14 @@ public class ControlCompania {
 		return this.repositorioCompania.buscarEmpleado(identificacion);
 	}
 	
+	
+	public void eliminarEmpleado() {
+		List<Empleado> empleados = this.repositorioCompania.consultarEmpleados();
+		for (Empleado empleado : empleados) {
+			 this.repositorioCompania.eliminarEmpleado(empleado);	
+		}
+	}
+
 	/**
 	 * Método que obtiene la nomina semanal a pagar a todos los empleados por la compañia
 	 * @return el valor total de la nomina
@@ -63,7 +71,7 @@ public class ControlCompania {
 	public double calcularNomina() throws EmpleadoException {
 		List<Empleado> empleados = this.repositorioCompania.consultarEmpleados();
 		double nomina = 0;
-		
+		System.out.println(empleados.size());
 		if(empleados.size() == 0) {
 			throw new EmpleadoException("No hay empleados registrados para calcular la nómina");
 		}
