@@ -1,11 +1,17 @@
 package compania.entidades;
+import javax.persistence.*;
 /**
  * 
  * @author Marco Contreras
  * @version 1.0
  */
-public abstract class Empleado {
 
+@Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "tipo")
+public abstract class Empleado {
+	
+	@Id
 	private String identificacion;
 	private String nombre;
 	

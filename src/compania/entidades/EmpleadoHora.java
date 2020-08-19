@@ -1,6 +1,10 @@
 package compania.entidades;
 
-public class EmpleadoHora extends Empleado{
+import javax.persistence.*;
+
+@Entity
+@DiscriminatorValue("hora")
+public class EmpleadoHora extends Empleado {
 	
 	private double valorHora;
 	private int horasTrabajadas;
@@ -15,7 +19,7 @@ public class EmpleadoHora extends Empleado{
 	@Override
 	public double obtenerSalario() {
 		if (horasTrabajadas > 40) {
-			return (valorHora*horasTrabajadas)+200000;
+			return (valorHora*horasTrabajadas) + 200000;
 		}
 		return (valorHora*horasTrabajadas);
 	}

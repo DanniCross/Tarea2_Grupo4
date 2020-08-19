@@ -1,5 +1,9 @@
 package compania.entidades;
 
+import javax.persistence.*;
+
+@Entity
+@DiscriminatorValue("comision")
 public class EmpleadoComision extends Empleado{
 	
 	private final double INTERES = 0.5;
