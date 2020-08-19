@@ -1,4 +1,4 @@
-package compañia.control;
+package compania.control;
 
 import java.awt.List;
 

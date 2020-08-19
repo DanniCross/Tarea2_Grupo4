@@ -1,4 +1,4 @@
-package compañia.entidades;
+package compania.entidades;
 
 public class EmpleadoComision extends Empleado{
 	

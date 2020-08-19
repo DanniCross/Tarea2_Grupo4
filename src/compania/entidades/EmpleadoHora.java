@@ -1,4 +1,4 @@
-package compañia.entidades;
+package compania.entidades;
 
 public class EmpleadoHora extends Empleado{
 	
