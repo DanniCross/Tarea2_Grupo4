@@ -2,6 +2,7 @@ package compania.persistencia;
 
 import java.util.List;
 import javax.persistence.*;
+
 import compania.entidades.Empleado;
 
 /**
