@@ -2,11 +2,12 @@ package compania.control;
 
 import compania.entidades.*;
 import compania.persistencia.*;
+import java.util.*;
 
 /**
  * Clase con la lógica para el control de los procesos de la compañia
  * @author José Cruz
- * @version 1.0.1
+ * @version 1.0.2
  */
 public class ControlCompania {
 	
@@ -60,7 +61,13 @@ public class ControlCompania {
 	 * @return el valor total de la nomina
 	 */
 	public double calcularNomina() {
-		return 0;
+		List<Empleado> empleados = this.repositorioCompania.consultarEmpleados();
+		double nomina = 0;
+		for (Empleado empleado: empleados) {
+			nomina += empleado.obtenerSalario();
+		}
+		
+		return nomina;
 	}
 	
 }

@@ -1,13 +1,13 @@
 package compania.persistencia;
 
+import java.util.List;
 import javax.persistence.*;
-
 import compania.entidades.Empleado;
 
 /**
  * Clase donde se manejará la conexión y las peticiones a la base de datos
  * @author José Cruz
- * @version 1.0.1
+ * @version 1.0.2
  */
 public class Orm implements RepositorioCompania {
 	
@@ -35,6 +35,14 @@ public class Orm implements RepositorioCompania {
 	public Empleado buscarEmpleado(String identificacion) {
 		Empleado empleado = gestorDB.find(Empleado.class, identificacion);
 		return empleado;
+	}
+	
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<Empleado> consultarEmpleados() {
+		Query query = gestorDB.createQuery("select e from Empleado e");
+		List<Empleado> empleados = query.getResultList();
+		return empleados;
 	}
 	
 	/**

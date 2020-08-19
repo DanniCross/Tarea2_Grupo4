@@ -1,11 +1,13 @@
 package compania.persistencia;
 
+import java.util.List;
+
 import compania.entidades.Empleado;
 
 /**
  * Interfaz que controla los métodos de manejro de empleados para la persistecia
  * @author José Cruz
- * @version 1.0.1
+ * @version 1.0.2
  */
 public interface RepositorioCompania {
 
@@ -23,5 +25,9 @@ public interface RepositorioCompania {
 	 */
 	public abstract Empleado buscarEmpleado(String identificacion);
 	
-	
+	/**
+	 * Método que obtiene la lista de empleados existentes
+	 * @return la lista de empleados
+	 */
+	public abstract List<Empleado> consultarEmpleados(); 
 }

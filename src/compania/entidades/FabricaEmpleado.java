@@ -25,15 +25,15 @@ public class FabricaEmpleado {
 		switch(tipo) {
 		case 'a':
 		case 'A': 
-			empleado = new EmpleadoAsalariado(identificacion,  nombre,salarioSemanal);
+			empleado = new EmpleadoAsalariado(identificacion, nombre, salarioSemanal);
 			break;
 		case 'h':
 		case 'H':
-			empleado = new EmpleadoHora(identificacion, nombre, valorHoras,horasTrabajadas);
+			empleado = new EmpleadoHora(identificacion, nombre, valorHoras, horasTrabajadas);
 			break;
 		case 'c':
 		case 'C':
-			empleado = new EmpleadoComision(identificacion,nombre,salarioSemanal,ventasRealizadas);
+			empleado = new EmpleadoComision(identificacion, nombre, salarioSemanal, ventasRealizadas);
 			break;
 		}
 		
