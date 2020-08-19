@@ -1,5 +1,11 @@
 package compania.entidades;
 
+/**
+ * 
+ * @author Marco Contreras
+ * @version 1.0
+ */
+
 public class EmpleadoAsalariado extends Empleado {
 	
 	private double salarioSemanal; 

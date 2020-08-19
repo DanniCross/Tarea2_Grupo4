@@ -1,6 +1,24 @@
 package compania.entidades;
 
+
+/**
+ * 
+ * @author Marco Contreras
+ * @version 1.0
+ */
 public class FabricaEmpleado {
+	
+	/*
+	 * Metodo que dada la información crea el empleado según su tipo
+	 * @param identificaicon
+	 * @param nombre
+	 * @param salarioSemanal
+	 * @param valorHoras
+	 * @param horasTrabajadas
+	 * @param ventasRealizadas
+	 * @param tipo
+	 * 
+	 */
 
 	public static Empleado crearEmleado(String identificacion, String nombre, double salarioSemanal,double valorHoras, int horasTrabajadas, double ventasRealizadas, char tipo) {
 		Empleado empleado = null;

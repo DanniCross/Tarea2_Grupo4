@@ -1,5 +1,9 @@
 package compania.entidades;
-
+/**
+ * 
+ * @author Marco Contreras
+ * @version 1.0
+ */
 public abstract class Empleado {
 
 	private String identificacion;
@@ -11,5 +15,8 @@ public abstract class Empleado {
 		this.nombre = nombre;
 	}
 	
+	/*
+	 *Funcion encargada de obtener el salario de los empleados 
+	 */
 	public abstract double obtenerSalario();
 }

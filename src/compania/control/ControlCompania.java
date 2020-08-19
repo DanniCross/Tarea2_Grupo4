@@ -12,4 +12,6 @@ public class ControlCompania {
 		this.listaEmpleados = listaEmpleados;
 	}
 	
+	
+	
 }
