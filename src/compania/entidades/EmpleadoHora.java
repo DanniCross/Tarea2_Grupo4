@@ -4,7 +4,12 @@ import javax.persistence.*;
 
 @Entity
 @DiscriminatorValue("hora")
-public class EmpleadoHora extends Empleado {
+/*
+ * Clase con el funcionamiento de los empleados por horas
+ * @author Juan Camilo Gómez
+ * @version 1.0
+ */
+public class EmpleadoHora extends Empleado{
 	
 	private double valorHora;
 	private int horasTrabajadas;
@@ -15,7 +20,7 @@ public class EmpleadoHora extends Empleado {
 		this.horasTrabajadas = horasTrabajadas;
 		
 	}
-
+	
 	@Override
 	public double obtenerSalario() {
 		if (horasTrabajadas > 40) {

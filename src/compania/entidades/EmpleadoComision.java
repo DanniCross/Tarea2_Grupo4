@@ -4,6 +4,11 @@ import javax.persistence.*;
 
 @Entity
 @DiscriminatorValue("comision")
+/*
+ * Clase con el funcionamiento de los empleados por comisiones
+ * @author Juan Camilo Gómez
+ * @version 1.0
+ */
 public class EmpleadoComision extends Empleado{
 	
 	private final double INTERES = 0.5;
